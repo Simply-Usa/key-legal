@@ -1,0 +1,1 @@
+var e=$(".close_open"),o=$(".menu");$(window).width()<=600&&o.hide(),e.click(function(){e.toggleClass("close_animation"),o.slideToggle(200)}),$(window).scroll(function(){100<=$(window).scrollTop()?(e.addClass("fixed"),o.addClass("fixed")):(e.removeClass("fixed"),o.removeClass("fixed"))});

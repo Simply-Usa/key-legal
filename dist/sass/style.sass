@@ -1,0 +1,124 @@
+$mainColor: #be1129
+$txtColor: #383838
+@font-face
+  font-family: GothamPro
+  src: url(../fonts/GothamPro.ttf)
+@font-face
+  font-family: pfd-bold
+  src: url(../fonts/pfdintextpro-bold.ttf)
+@font-face
+  font-family: pfd-reg
+  src: url(../fonts/PFDinTextPro-Regular.ttf)
+@font-face
+  font-family: basc
+  src: url(../fonts/NewBaskervilleC.otf)
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+a
+  text-decoration: none
+.close_open
+  display: none
+section.header
+  background: url(../img/header-bg.jpg) no-repeat left center / cover
+  height: 100vh
+  color: $txtColor
+header
+  height: fit-content
+  padding-top: 15px
+  margin-bottom: 100px
+  .container
+    display: grid
+    grid-template-columns: 150px 1fr 150px 205px
+    // color: $txtColor
+    grid-gap: 20px
+    .close_open
+      display: none
+    div:last-child
+      display: flex
+      flex-direction: column
+      a:first-child
+        font-family: 'pfd-bold'
+      a.btn
+        margin-top: 10px
+        color: $mainColor
+        padding: 12px 30px
+        white-space: nowrap
+        border: 1px solid
+        border-radius: 40px
+        width: fit-content
+        transition: .1s ease-in-out
+        &:hover
+          background-color: $mainColor
+          color: #fff
+    div:nth-child(3)
+      // border: 1px solid
+      display: flex
+      justify-content: center
+      align-items: center
+      // margin-left: 30px
+      p
+        // border: 1px solid
+        border-radius: 40px
+        padding: 15px 0 10px 0
+        position: relative
+        box-shadow: 0px 0px 10px 0px rgba(76, 84, 94, 0.2)
+        background-color: #fff
+        a:hover
+          background-color: #aaa
+          color: #fff
+        a:first-child
+          border-right: 1px solid #e8e8e8
+          padding: 15px 20px 10px 25px
+          border-radius: 40px 0 0 40px 
+        a:last-child
+          border-left: 1px solid #e8e8e8
+          border-radius: 0 40px 40px 0 
+          padding: 15px 25px 10px 20px
+    a
+      font-family: 'GothamPro'
+      color: $txtColor
+      font-size: 1.2vw
+    .logo
+      // border: 1px solid
+      display: flex
+      justify-content: center
+      img
+        width: 110px
+        height: 70px
+    .menu_some__content
+      font-family: 'GothamPro'
+      h2
+        font-size: .9vw 
+    ul.menu
+      list-style: none
+      display: flex
+      width: 95%
+      // border: 1px solid
+      border-top: .5px solid #e8e8e8
+      padding-top: 20px
+      margin-top: 20px
+      li
+        // margin-left: 25px
+        display: flex
+        align-items: center
+        white-space: nowrap
+        &:before
+          content: ''
+          display: block
+          width: 4.2px
+          height: 4.2px
+          border-radius: 50%
+          background-color: #be1129
+          margin: 0 10px
+        &:first-child
+          margin-left: 0
+          &:before
+            content: none
+.container
+  width: 70%
+  margin: auto
+@import '_first-section.sass'
+@import '_media.scss'
