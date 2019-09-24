@@ -1,0 +1,85 @@
+.fifth_section
+  padding-top: 280px
+  color: $txtColor
+  // height: fit-content
+  background: url(../img/price-bg.jpg) no-repeat center 10% / cover
+  >h2
+    text-align: center
+    font-family: 'basc'
+    font-size: 3vw
+    margin-bottom: 20px
+  .price_blocks
+    // border: 1px solid
+    display: grid
+    grid-template-columns: repeat(3, 180px)
+    grid-template-rows: 20px 130px
+    grid-template-areas: 'title title title'
+    grid-gap: 20px
+    &:first-child
+      margin-bottom: 30px
+    &:last-child
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-areas: 'title title'
+      grid-gap: 20px
+    h2
+      font-family: 'GothamProBold'
+      color: $mainColor
+      grid-area: title
+      text-align: center
+    .price_block
+      background-color: #fff
+      box-shadow: 0px 0px 10px 0px rgba(76, 84, 94, 0.2)
+      border-radius: 10px
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      h2
+        padding-top: 15px
+      h3
+        font-size: 1.1vw
+        font-family: 'GothamPro'
+        width: 100%
+        font-weight: 100
+        padding-bottom: 20px
+        border-bottom: 1px solid #e8e8e8
+  .container
+    display: flex
+    .form
+      position: relative
+      transform: none
+      left: 0
+      height: fit-content
+      margin-left: 40px
+      box-shadow: 0px 0px 10px 0px rgba(76, 84, 94, 0.2)
+      padding-bottom: 20px
+      text-align: center
+      form
+        input:last-child
+          margin-top: 20px
+      button.btn
+        margin-top: 20px
+.container.some_tabs
+  // border: 1px solid
+  margin-top: 95px
+  display: block
+  position: relative
+  .tabs
+    list-style: none
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    li
+      border: 1px solid
+      font-size: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 50px
+      font-family: 'GothamPro'
+      border-radius: 50px
+      cursor: pointer
+      &:nth-child(2)
+        margin: 0 20px
+      a
+        color: $mainColor

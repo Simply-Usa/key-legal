@@ -2,15 +2,27 @@ $mainColor: #be1129
 $txtColor: #383838
 @font-face
   font-family: GothamPro
+  font-display: swap
   src: url(../fonts/GothamPro.ttf)
 @font-face
+  font-family: GothamProBold
+  font-display: swap
+  src: url(../fonts/GothamProBold.ttf)
+@font-face
+  font-family: GothamProLight
+  font-display: swap
+  src: url(../fonts/GothamPro-Light.ttf)
+@font-face
   font-family: pfd-bold
+  font-display: swap
   src: url(../fonts/pfdintextpro-bold.ttf)
 @font-face
   font-family: pfd-reg
+  font-display: swap
   src: url(../fonts/PFDinTextPro-Regular.ttf)
 @font-face
   font-family: basc
+  font-display: swap
   src: url(../fonts/NewBaskervilleC.otf)
 *
   margin: 0
@@ -118,7 +130,14 @@ header
           &:before
             content: none
 .container
-  width: 70%
+  width: 75%
   margin: auto
 @import '_first-section.sass'
+@import '_second-section.sass'
+@import '_thrid-section.sass'
+@import '_fourth-section.sass'
+@import '_fifth-section.sass'
+@import '_tabs.sass'
+footer
+  height: 200px
 @import '_media.scss'
