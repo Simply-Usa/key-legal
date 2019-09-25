@@ -70,3 +70,24 @@ $('#to_left__two').click(slideRightTwo);
 $('.questions > .question > .question_title').click(function(){
 	$(this).parents('.question').find('p, hr').slideToggle(200);
 })
+//counter
+$('h2 span').each(function() {
+	var $this = $(this),
+	countTo = $this.attr('data-count');
+	
+	$({ countNum: $this.text()}).animate({
+		countNum: countTo
+	},
+	{
+		
+		duration: 3000,
+		easing:'linear',
+		step: function() {
+			$this.text(Math.floor(this.countNum));
+		},
+		complete: function() {
+			$this.text(this.countNum);
+			//alert('finished');
+		}
+	});  
+});
