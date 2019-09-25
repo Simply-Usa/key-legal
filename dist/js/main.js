@@ -91,3 +91,13 @@ $('h2 span').each(function() {
 		}
 	});  
 });
+//lazy load map
+var secF = $('.fourth_section');
+var secFTop = secF.offset().top;
+$(window).bind('scroll', function() {
+  var windowTop = $(this).scrollTop();
+  if(windowTop > secFTop){
+    $('.map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.7886601774903!2d37.55118177793059!3d55.76217339989372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bd4f854dbd7%3A0x6408e4fabe42e78e!2zMi3RjyDQl9Cy0LXQvdC40LPQvtGA0L7QtNGB0LrQsNGPINGD0LsuLCAxMyDRgdGC0YDQvtC10L3QuNC1IDQzLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIzMDIy!5e0!3m2!1sru!2skz!4v1569385263253!5m2!1sru!2skz" width="80%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe><div class="circle"><img src="app/img/logo.png" alt=""><a href="tel:+74957956636">+7(459) 795-66-36</a><a href="info@keylegal.ru">info@keylegal.ru</a><p>123022, Россия, Москва, <br> 2-ая Звенигородская <br>ул., д.13, стр.43</p></div>');
+    $(window).unbind('scroll');
+  }
+})
