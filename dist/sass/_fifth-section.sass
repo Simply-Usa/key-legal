@@ -64,12 +64,18 @@
   // border: 1px solid
   margin-top: 95px
   display: block
+  height: 490px
   position: relative
   .tabs
     list-style: none
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
     li
+      &.active
+        background-color: #fff
+        border: none
+        box-shadow: 0 0 5px 0px #aaa
+        font-weight: bold
       border: 1px solid
       font-size: 24px
       display: flex
@@ -79,6 +85,7 @@
       font-family: 'GothamPro'
       border-radius: 50px
       cursor: pointer
+      color: $mainColor
       &:nth-child(2)
         margin: 0 20px
       a
