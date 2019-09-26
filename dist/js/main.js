@@ -66,8 +66,10 @@ $('#to_right__two').click(slideLeftTwo);
 $('#to_left__two').click(slideRightTwo);
 
 //questions accordion
+
 $('.questions > .question > .question_title').click(function(){
 	$(this).parents('.question').find('p, hr').slideToggle(200);
+	$(this).parents('.question').find('img').toggleClass('rotate');
 })
 //counter
 $('h2 span').each(function() {
