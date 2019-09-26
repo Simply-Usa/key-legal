@@ -84,7 +84,7 @@
 		}
 	}
 	.container{
-		width: 95%;
+		width: 98%;
 	}
 	header{
 		height: fit-content;
@@ -113,6 +113,7 @@
 			grid-template-areas:	'call call call'
 			'logo lang lang';
 			grid-template-columns: repeat(3, 1fr);
+			width: 98%;
 			a{
 				font-size: 3vw;
 			}
@@ -186,6 +187,50 @@
 				}
 			}
 		}
+	}
+	.main_form__container, .main_form__container.some{
+		.main_form__item{
+			&:nth-child(2){
+				display: none;
+			}
+		}
+	}
+	.about_container{
+		flex-direction: column-reverse;
+		.about_list__container{
+			h2{
+				font-size: 7vw;
+			}
+			h2, h3{
+				text-align: center;
+				font-weight: 100;
+			}
+		}
+	}
+	.second_section{
+		.about_blocks{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			div{
+				margin: 0;
+				width: auto;
+				&:first-child{
+					grid-area: firstDiv;
+					// border: 3px solid;
+				}
+			}
+		}
+	}
+	.second_section .about_blocks div{
+		p{
+			font-size: 3vw;
+		}
+	}
+	.main_form__container{
+		background: url(../img/mobile-red-bg.png) no-repeat center center / cover;
+	}
+	.container.red_image .container{
+		width: 100%;
 	}
 }
 @media(max-width: 1440px){
@@ -350,12 +395,85 @@
 		}
 	}
 }
-@media(max-width: 1280){
-		.main_form__container{
-			.main_form__item{
+@media(max-width: 1280px){
+	.main_form__container.some{
+		.main_form__item{
+			&:first-child{
+				margin-top: 60px;
 				h2{
-					margin: 0;
+					margin-top: 0px;
+					font-size: 3.5vw;
 				}
 			}
 		}
+	}
+	.sixth_section{
+		.main_form__container{
+			.main_form__item{
+				&:first-child{
+					margin-top: 60px;
+				}
+			}
+		}
+		.sldiers_container{
+			.slider_one, .slider_two{
+				.controls{
+					left: 10px;
+				}
+			}
+			.slider_two{
+				.controls{
+					transform: translateX(640px);
+				}
+			}
+		}
+		.container{
+			width: 96%;
+		}
+		.sldiers_container{
+			.slider_one, .slider_two{
+				// border: 1px solid;
+				width: 700px;
+			}
+		}
+	}
+	.main_form__container{
+		.main_form__item{
+			margin: 0;
+			h2{
+				font-size: 3.7vw;
+			}
+			&:first-child{
+				margin: 130px 0 0 0;
+			}
+			h2{
+				margin-top: 0;
+			}
+		}
+	}
+	#tab-1{
+		.item_of__first___items{
+			&:nth-child(3){
+				transform: translateX(225px);
+			}
+			&:nth-child(4){
+				transform: translateX(510px);
+			}
+			&:nth-child(5){
+				transform: translateX(800px);
+			}
+			&:nth-child(6){
+				transform: translateX(820px) translateY(200px);
+			}
+			&:nth-child(7){
+				transform: translateX(535px) translateY(200px);
+			}
+			&:nth-child(8){
+				transform: translateX(220px) translateY(200px);
+			}
+			&:nth-child(9){
+				transform: translateY(200px);
+			}
+		}
+	}
 }

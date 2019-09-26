@@ -17,7 +17,6 @@ $(window).scroll(function(){
 		menu.removeClass('fixed');
 	}
 });
-
 //tabs
 $(".tabs-item").not(":first").hide();
 $('#tabs_container .tabs li').click(function() {
