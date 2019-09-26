@@ -100,3 +100,12 @@ $(window).bind('scroll', function() {
     $(window).unbind('scroll');
   }
 })
+//accreditation slider
+$('#accr_right__click').click(function(){
+	$('.fourth_section .accreditation_container .accreditation_block:nth-child(2)').hide();
+	$('.fourth_section .accreditation_container .accreditation_block:last-child').show();
+});
+$('#accr_left__click').click(function(){
+	$('.fourth_section .accreditation_container .accreditation_block:nth-child(2)').show();
+	$('.fourth_section .accreditation_container .accreditation_block:last-child').hide();
+});
