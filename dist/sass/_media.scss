@@ -31,7 +31,7 @@
 		form input[type=text]{
 			width: 300px;
 			// border: 1px solid;
-			font-size: 30px;
+			font-size: 18px;
 			margin: 0 10px;
 		}
 	}
@@ -99,12 +99,12 @@
 		.sldiers_container{
 			.slider_one, .slider_two{
 				.controls{
-					left: 90px;
+					left: 8px;
 				}
 			}
 			.slider_two{
 				.controls{
-					transform: translateX(640px);
+					transform: translateX(0);
 				}
 			}
 		}
@@ -150,17 +150,27 @@
 		.sldiers_container{
 			.slider_one, .slider_two{
 				.controls{
-					left: 65px;
+					left: 7px;
 				}
 			}
 			.slider_two{
 				.controls{
-					transform: translateX(640px);
+					transform: translateX(0);
 				}
 			}
 		}
 		.container{
 			width: 90%;
+		}
+	}
+	.main_form__container.some .main_form__item:first-child{
+		margin-top: 70px;
+	}
+	.sixth_section{
+		.main_form__container{
+			.main_form__item:first-child{
+				margin-top: 20px;
+			}
 		}
 	}
 }
