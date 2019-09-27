@@ -247,20 +247,37 @@
 	}
 }
 @media(max-width: 600px){
-	#tab-2{
+	#tab-3{
+		display: flex;
 		flex-direction: column;
 		div{
+			margin-bottom: 20px;
+			h2{
+				font-size: 30px;
+			}
+		}
+	}
+	#tab-2{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		div{
+			&:last-child{
+				text-align: left;
+			}
 			&:first-child{
 				width: 100%;
 				margin-bottom: 10px;
 				ul{
 					li{
-						border: 1px solid;
+						margin: auto;
+						// border: 1px solid;
 						display: flex;
 						flex-direction: column;
 						font-size: 18px;
 						align-items: center;
 						width: 300px;
+						margin-top: 10px;
 						&:before{
 							font-size: 30px;
 							width: 100px;
@@ -667,7 +684,7 @@
 	.fourth_section{
 		// overflow: none;
 		.accreditation_slider{
-			border: 1px solid;
+			// border: 1px solid;
 			height: fit-content;
 		}
 		.accreditation_container{
@@ -754,6 +771,7 @@
 		}
 	}
 	.about_container{
+		overflow: hidden;
 		flex-direction: column-reverse;
 		.about_list__container{
 			h2{
@@ -771,7 +789,7 @@
 	}
 	.second_section{
 		height: fit-content;
-		border: 1px solid;
+		// border: 1px solid;
 		position: relative;
 		.container{
 			width: 90%;
@@ -846,7 +864,7 @@
 	.sixth_section{
 		.container.red_image.woman{
 			// background: url(../img/mobile-red-bg.png) no-repeat center center / contain;
-			border: 1px solid;
+			// border: 1px solid;
 			padding: 0;
 			margin: 0;
 		}
@@ -869,7 +887,7 @@
 		background: url(../img/tall-mobile-red-bg.png) no-repeat center center / contain;
 		padding: 0;
 		h2{
-			border: 1px solid;
+			// border: 1px solid;
 			width: 230px;
 			margin: auto;
 		}
@@ -893,13 +911,26 @@
 	.sixth_section .container.red_image.woman{
 		.container{
 			.form{
-				border: 1px solid;
+				// border: 1px solid;
 				margin: auto;
 			}
 		}
 	}
 	footer{
+		.bootom_footer{
+			flex-direction: column-reverse;
+			align-items: center;
+			p{
+				margin-top: 10px;
+			}
+		}
 		.top_footer{
+			.footer_logos{
+				// border: 2px solid;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+			}
 			.agree{
 				display: flex;
 			}
@@ -909,7 +940,7 @@
 		}
 	}
 	.map{
-		border: 1px solid;
+		// border: 1px solid;
 		margin-top: 300px;
 		iframe{
 			border-radius: 0;
@@ -917,8 +948,8 @@
 		}
 		.circle{
 			right: 0;
-			width: 90%;
-			height: 90%;
+			width: 340px;
+			height: 340px;
 			left: 50%;
 			transform: translateX(-50%) translateY(-200px);
 		}
