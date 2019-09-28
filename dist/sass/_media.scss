@@ -65,7 +65,7 @@
 				padding: 20px 0;
 			}
 			p{
-				margin: 10px 0 0 0;
+				margin: 20px 30px 0;
 			}
 		}
 	}
@@ -173,6 +173,11 @@
 			}
 		}
 	}
+	.main_form__container.some .main_form__item p{
+		margin: 0;
+		padding: 0;
+		margin-top: 10px;
+	}
 }
 @media(max-width: 1280px){
 	.main_form__container.some{
@@ -202,7 +207,7 @@
 			}
 			.slider_two{
 				.controls{
-					transform: translateX(640px);
+					transform: translateX(0);
 				}
 			}
 		}
@@ -259,7 +264,7 @@
 @media(max-width: 600px){
 	.fourth_section{
 		background-position-y: -329px;
-    background-position-x: -1530px;
+		background-position-x: -1530px;
 	}
 	#tab-3{
 		display: flex;
@@ -278,9 +283,11 @@
 		div{
 			&:last-child{
 				text-align: left;
+				// border: 1px solid;
 			}
 			&:first-child{
 				width: 100%;
+				margin: auto;
 				margin-bottom: 10px;
 				ul{
 					li{
@@ -310,9 +317,6 @@
 			min-width: 0;
 			width: 100%;
 			margin: auto;
-			div{
-				// border: 1px solid;
-			}
 			ul{
 				// width: 300px;
 				// border: 1px solid;
@@ -339,7 +343,7 @@
 	}
 	.fifth_section{
 		background-position-x: -470px;
-    background-position-y: -770px;
+		background-position-y: -770px;
 		.container{
 			width: 95%;
 			.form{
@@ -535,7 +539,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position-x: -863px;
-    background-position-y: 0;
+		background-position-y: 0;
 	}
 	.counter_container{
 		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -846,6 +850,7 @@
 			margin: 0;
 			grid-template-columns: 160px 160px;
 			grid-gap: 20px;
+			padding-bottom: 20px;
 			div{
 				margin: 0;
 				width: auto;
@@ -922,12 +927,6 @@
 			>h2{
 				font-size: 30px;
 			}
-		}
-		.container.red_image.woman{
-			// background: url(../img/mobile-red-bg.png) no-repeat center center / contain;
-			// border: 1px solid;
-			padding: 0;
-			margin: 0;
 		}
 	}
 	.bottom_links{
@@ -1023,9 +1022,6 @@
 			font-size: 30px;
 		}
 	}
-	.second_section{
-		// width: 100%;
-	}
 	.accreditation_container{
 		// overflow: hidden;
 		width: 100%;
@@ -1033,8 +1029,15 @@
 	}
 }
 @media(max-width: 377px){
+	.tabs_items{
+		#tab-1{
+			// background: #000;
+			background-position-Y: 200px;
+			background-size: 80%;
+		}
+	}
 	.fourth_section{
-		margin-top: 350px;
+		margin-top: 600px;
 		.container{
 			margin: 0;
 			padding: 0;
@@ -1051,9 +1054,10 @@
 					font-size: 15px;
 				}
 				div{
-					width: 300px;
+					width: 100%;
 					margin: auto;
 					margin: 0;
+					margin-bottom: 20px;
 				}
 			}
 		}
@@ -1102,16 +1106,13 @@
 		.about_container{
 			.about_blocks{
 				margin-top: 30px;
-				grid-template-columns: 130px 130px;
+				grid-template-columns: 170px 170px;
 				padding-bottom: 10px;
 			}
 			div{
 				// border: 1px solid;
 				box-shadow: 0 0 5px 0 #aaa;
-				width: 120px;
-				&:last-child{
-					// border: 1px solid;
-				}
+				margin: 0 5px;
 			}
 		}
 	}
@@ -1131,6 +1132,48 @@
 				height: fit-content;
 			}
 		}
+	}
+}
+@media(max-width: 320px){
+	.map{
+		.circle{
+			width: 310px;
+			height: 310px;
+			a:nth-child(3){
+				margin: 5px 0;
+			}
+		}
+	}
+	.fifth_section .price_blocks {
+		grid-template-rows: 20px 160px 160px;
+	}
+	*.form{
+		form{
+			input[type=text]{
+				width: 250px;
+			}
+		}
+	}
+	.tabs_items{
+		#tab-1{
+			background-position-y: 230px;
+			background-size: 95%;
+		}
+	}
+	.sixth_section .main_form__container .main_form__item:first-child {
+		h3{
+			// border: 1px solid;
+			width: 300px;
+		}
+	}
+	.main_form__container.some .main_form__item:first-child h2{
+		width: 260px;
+    margin: auto;
+    font-size: 24px;
+	}
+	.sixth_section .container.red_image.woman .main_form__container p {
+		width: 300px;
+		text-align: center;
 	}
 }
 // end mobile version
