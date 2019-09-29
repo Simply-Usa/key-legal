@@ -112,4 +112,7 @@ $(document).ready(function() {
 		$('.fourth_section .accreditation_container .accreditation_block:nth-child(2)').show();
 		$('.fourth_section .accreditation_container .accreditation_block:last-child').hide();
 	});
+	$('.consult button, .close').click(function(){
+		$('.modal').toggle();
+	});
 });
