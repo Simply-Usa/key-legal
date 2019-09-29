@@ -262,6 +262,21 @@
 	}
 }
 @media(max-width: 600px){
+	.modal{
+		.form{
+			h2{
+				font-size: 7vw;
+			}
+			width: 90%;
+		}
+	}
+	.price_blocks.eng{
+		.price_block{
+			h2{
+				font-size: 4vw;
+			}
+		}
+	}
 	.fourth_section{
 		background-position-y: -329px;
 		background-position-x: -1530px;
@@ -540,8 +555,8 @@
 		background: url(../img/header-bg.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position-x: -863px;
-		background-position-y: 0;
+		background-position-x: -800px;
+		background-position-y: -200px;
 	}
 	.counter_container{
 		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -1120,7 +1135,7 @@
 			}
 			div{
 				// border: 1px solid;
-				box-shadow: 0 0 5px 0 #aaa;
+				// box-shadow: 0 0 5px 0 #aaa;
 				margin: 0 5px;
 			}
 		}
